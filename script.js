@@ -227,3 +227,7 @@ document.getElementById("car").addEventListener("change", function() {
         modelSelect.appendChild(opt);
     });
 });
+document.getElementById("model").addEventListener("change", function() {
+    const gen = document.getElementById("generation-block");
+    gen.style.display = this.value ? "block" : "none";
+});
