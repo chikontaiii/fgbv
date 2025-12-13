@@ -230,5 +230,5 @@ document.getElementById("car").addEventListener("change", function() {
 });
 document.getElementById("model").addEventListener("change", function () {
     const gen = document.getElementById("generation-block");
-    gen.style.display = this.value ? "block" : "none";
+   if (this.value) gen.style.display = "block";
 });
