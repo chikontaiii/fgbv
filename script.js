@@ -526,3 +526,9 @@ document.getElementById("model").addEventListener("change", function() {
     const gen = document.getElementById("generation-block");
     gen.style.display = this.value ? "block" : "none";
 });
+const burger = document.querySelector('.burger');
+  const menu = document.querySelector('nav ul');
+
+  burger.onclick = () => {
+    menu.classList.toggle('active');
+  };
