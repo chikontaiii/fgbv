@@ -228,7 +228,3 @@ document.getElementById("car").addEventListener("change", function() {
     });
 });
 });
-document.getElementById("model").addEventListener("change", function () {
-    const gen = document.getElementById("generation-block");
-   if (this.value) gen.style.display = "block";
-});
