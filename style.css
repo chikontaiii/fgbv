@@ -54,6 +54,7 @@ header {
     border: none;
     cursor: pointer;
     color: var(--dark);
+    margin-left: auto;
 }
 nav ul {
     display: flex;
@@ -388,6 +389,9 @@ img, video {
 
     .header-content {
         position: relative;
+    }
+    .nav {
+        display: none;
     }
 
     nav ul {
