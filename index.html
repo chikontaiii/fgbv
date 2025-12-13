@@ -167,18 +167,12 @@
                             <select id="model"></select>
                         </div>
                     </div>
-                    <div id="generation-block" class="form-group" style="margin-top: 15px; display:none;">
+                  <div id="generation-block" class="form-group" style="display:none; margin-top:15px;">
     <label for="generation">Поколение</label>
-                        <select id="model">
-    <option value="">Выберите модель</option>
-</select>
-
-    <input 
-        type="text" 
-        id="generation" 
-        placeholder="Например: G05, W213, F10, рестайлинг"
-    >
+    <input type="text" id="generation"
+           placeholder="Например: G05, F10, рестайлинг">
 </div>
+
 
 
                     <div class="form-group">
@@ -227,15 +221,11 @@
                             .then(() => alert("Заявка отправлена!"))
                             .catch(() => alert("Ошибка отправки"));
                     });
-                    document.getElementById("car").addEventListener("change", function () {
-                    const modelBlock = document.getElementById("model-block");
+document.getElementById("model").addEventListener("change", function () {
+    const gen = document.getElementById("generation-block");
+    gen.style.display = this.value ? "block" : "none";
+});
 
-                    if (this.value !== "") {
-                    modelBlock.style.display = "block";
-                        } else {
-                        modelBlock.style.display = "none";
-                        }
-                            });
                 </script>
 
             </div>
