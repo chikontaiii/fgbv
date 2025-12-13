@@ -227,4 +227,3 @@ document.getElementById("car").addEventListener("change", function() {
         modelSelect.appendChild(opt);
     });
 });
-});
