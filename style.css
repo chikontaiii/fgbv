@@ -47,7 +47,14 @@ header {
     font-weight: bold;
     color: var(--primary);
 }
-
+.burger {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--dark);
+}
 nav ul {
     display: flex;
     gap: 25px;
