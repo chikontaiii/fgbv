@@ -166,6 +166,10 @@
                             <label>Модель:</label>
                             <select id="model"></select>
                         </div>
+                        <div id="generation-block" class="form-group" style="display:none; margin-top:15px;">
+                            <label for="generation">Поколение</label>
+                            <input type="text" id="generation" placeholder="Напишите поколение автомобиля">
+                        </div>
                     </div>
 
                     <div class="form-group">
@@ -190,6 +194,7 @@
                         let email = document.getElementById("email").value;
                         let car = document.getElementById("car").value;
                         let model = document.getElementById("model").value;
+                        let pkl = document.getElementById("generation").value;
                         let msg = document.getElementById("message").value;
 
                         let text = `
@@ -199,6 +204,7 @@
 <b>Email:</b> ${email}
 <b>Автомобиль:</b> ${car}
 <b>Модель:</b> ${model}
+<b>Поколение:</b> ${pkl}
 <b>Сообщение:</b> ${msg}
 `;
 
