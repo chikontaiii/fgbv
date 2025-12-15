@@ -79,7 +79,6 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* по желанию для центрирования */
     color: #fff;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     margin-top: 80px;
@@ -94,7 +93,6 @@ nav a:hover {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    /* чтобы видео было позади текста */
 }
 
 .hero .container {
@@ -303,7 +301,7 @@ footer li {
         gap: 15px;
     }
 }
-/* --- Общие стили --- */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -317,7 +315,7 @@ body {
     color: #333;
 }
 
-/* --- Контейнер --- */
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -325,7 +323,6 @@ body {
     padding: 20px;
 }
 
-/* --- Заголовки и текст --- */
 h1, h2, h3 {
     margin-bottom: 15px;
 }
@@ -334,7 +331,7 @@ p {
     margin-bottom: 10px;
 }
 
-/* --- Ссылки --- */
+
 a {
     color: #0077cc;
     text-decoration: none;
@@ -344,7 +341,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* --- Кнопки --- */
+
 button {
     padding: 10px 20px;
     border: none;
@@ -358,7 +355,6 @@ button:hover {
     background-color: #005fa3;
 }
 
-/* --- Изображения и видео --- */
 img, video {
     max-width: 100%;
     height: auto;
@@ -366,7 +362,6 @@ img, video {
     margin: 10px 0;
 }
 
-/* --- Flexbox контейнер --- */
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -374,14 +369,13 @@ img, video {
 }
 
 .flex > div {
-    flex: 1 1 200px; /* растет, сжимается, min-width 200px */
+    flex: 1 1 200px; 
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* --- Медиазапросы для телефонов --- */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
